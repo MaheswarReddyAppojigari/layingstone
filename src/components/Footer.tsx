@@ -1,4 +1,11 @@
-import { Mail, Phone, MapPin, Linkedin, Twitter, Instagram } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Linkedin,
+  Twitter,
+  Instagram,
+} from "lucide-react";
 import { Link } from "react-router-dom";
 import logo from "@/assets/layingstone-logo.jpg";
 
@@ -33,15 +40,17 @@ export const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-3 mb-6">
-              <img 
-                src={logo} 
-                alt="Layingstone Logo" 
+              <img
+                src={logo}
+                alt="Layingstone Logo"
                 className="w-12 h-12 object-contain bg-white rounded-lg p-1"
               />
-              <span className="font-display font-bold text-xl text-accent-foreground">Layingstone</span>
+              <span className="font-display font-bold text-xl text-accent-foreground">
+                Layingstone
+              </span>
             </Link>
             <p className="text-accent-foreground/60 mb-6 text-sm leading-relaxed">
-              Building world-class sports infrastructure that inspires athletic 
+              Building world-class sports infrastructure that inspires athletic
               excellence and serves communities worldwide.
             </p>
             <div className="flex gap-4">
@@ -114,7 +123,8 @@ export const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                 <span className="text-accent-foreground/60 text-sm">
-                  Bengaluru, Karnataka, India
+                  Workhub by Novel Office,Whitefield, Bengaluru, Karnataka,
+                  India
                 </span>
               </li>
               <li className="flex items-center gap-3">
@@ -145,10 +155,16 @@ export const Footer = () => {
             © 2026 Layingstone. All rights reserved.
           </p>
           <div className="flex gap-6">
-            <a href="#" className="text-accent-foreground/50 hover:text-accent-foreground/80 text-sm transition-colors">
+            <a
+              href="#"
+              className="text-accent-foreground/50 hover:text-accent-foreground/80 text-sm transition-colors"
+            >
               Privacy Policy
             </a>
-            <a href="#" className="text-accent-foreground/50 hover:text-accent-foreground/80 text-sm transition-colors">
+            <a
+              href="#"
+              className="text-accent-foreground/50 hover:text-accent-foreground/80 text-sm transition-colors"
+            >
               Terms of Service
             </a>
           </div>

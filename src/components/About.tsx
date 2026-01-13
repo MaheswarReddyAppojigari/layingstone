@@ -2,16 +2,16 @@ import { CheckCircle2 } from "lucide-react";
 import aboutBg from "@/assets/about-bg.jpg";
 
 const features = [
-  "25+ years of specialized sports construction experience",
+  "10+ years of specialized sports construction experience",
   "ISO 9001 certified quality management systems",
   "IAAF, FIFA, and World Athletics approved facilities",
   "Sustainable and eco-friendly construction practices",
   "Dedicated project management from concept to completion",
-  "Global network of engineering and design partners",
+  "Great network of engineering and design partners",
 ];
 
 const stats = [
-  { value: "$2.5B+", label: "Project Value Delivered" },
+  
   { value: "98%", label: "On-Time Completion Rate" },
   { value: "100%", label: "Client Satisfaction" },
 ];
@@ -40,7 +40,7 @@ export const About = () => {
               Building Excellence, Stone by Stone
             </h2>
             <p className="text-accent-foreground/80 text-lg mb-8 leading-relaxed">
-              For over two decades, Layingstone has been the trusted partner for 
+              For over a decade, Layingstone has been the trusted partner for 
               sports organizations, governments, and institutions seeking world-class 
               athletic infrastructure. Our commitment to quality, innovation, and 
               sustainability sets us apart.

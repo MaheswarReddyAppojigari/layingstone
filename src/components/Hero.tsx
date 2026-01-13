@@ -50,7 +50,7 @@ export const Hero = () => {
             style={{ animationDelay: "0.3s" }}
           >
             From world-class stadiums to community sports facilities, we lay the foundation 
-            for athletic achievement. Trusted by organizations worldwide.
+            for athletic achievement.
           </p>
 
           {/* CTAs */}

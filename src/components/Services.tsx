@@ -1,4 +1,4 @@
-import { Building2, Trophy, Users, Zap, Target, Shield } from "lucide-react";
+import { Building2, Trophy, Users,  Target, Shield,Footprints } from "lucide-react";
 
 import serviceStadium from "@/assets/service-stadium.jpg";
 import serviceTrack from "@/assets/service-track.jpg";
@@ -6,7 +6,7 @@ import serviceComplex from "@/assets/service-complex.jpg";
 import serviceTennis from "@/assets/service-tennis.jpg";
 import serviceAquatic from "@/assets/service-aquatic.jpg";
 import serviceTurf from "@/assets/service-turf.jpg";
-
+import serviceChildren from "@/assets/sevice-children.jpg"
 const services = [
   {
     icon: Building2,
@@ -33,10 +33,10 @@ const services = [
     image: serviceTennis,
   },
   {
-    icon: Zap,
-    title: "Aquatic Centers",
-    description: "Olympic-standard pools and aquatic facilities with advanced water systems.",
-    image: serviceAquatic,
+    icon: Footprints,
+    title: "Children Play Area",
+    description: "A fun and safe children’s play area with colorful equipment, soft surfaces, and plenty of space to run, climb, and enjoy games with friends",
+    image: serviceChildren,
   },
   {
     icon: Shield,
