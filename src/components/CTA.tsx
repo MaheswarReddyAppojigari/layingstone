@@ -36,9 +36,7 @@ export const CTA = () => {
                 Start a Conversation
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button variant="heroOutline" size="xl">
-                Download Brochure
-              </Button>
+              
             </div>
           </div>
         </div>

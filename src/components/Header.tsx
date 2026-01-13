@@ -3,7 +3,18 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { getWhatsAppUrl } from "@/components/FloatingContactButtons";
-import logo from "@/assets/layingstone-logo.jpg";
+import logo from "@/assets/layingstone-logo.png";
+import logoText from "@/assets/layingstone-logo-text.png";
+const navItemClass = `
+  px-4 py-2 rounded-lg
+  bg-black/5
+  text-foreground font-medium
+  shadow-sm
+  hover:bg-black/10
+  active:scale-95
+  transition-all duration-200
+  cursor-pointer
+`;
 
 const navLinks = [
   { label: "Services", href: "/#services" },
@@ -33,7 +44,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+<header className="fixed top-0 left-0 right-0 z-50 bg-[#f5f5dc]/70 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
@@ -43,33 +54,33 @@ export const Header = () => {
               alt="Layingstone Logo" 
               className="w-10 h-10 lg:w-12 lg:h-12 object-contain"
             />
-            <span className="font-display font-bold text-xl lg:text-2xl text-foreground">Layingstone</span>
+            <img src={logoText} alt="Layingstone Logo" 
+              className="h-7 lg:h-9 object-contain"/>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
-              link.href.startsWith("/#") ? (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  onClick={() => handleNavClick(link.href)}
-                  className="text-muted-foreground hover:text-foreground transition-colors font-medium"
-                >
-                  {link.label}
-                </a>
-              ) : (
-                <Link
-                  key={link.label}
-                  to={link.href}
-                  className="text-muted-foreground hover:text-foreground transition-colors font-medium"
-                >
-                  {link.label}
-                </Link>
-              )
-            ))}
-          </nav>
-
+        <nav className="hidden md:flex items-center gap-4">
+  {navLinks.map((link) =>
+    link.href.startsWith("/#") ? (
+      <button
+        key={link.label}
+        type="button"
+        onClick={() => handleNavClick(link.href)}
+        className={navItemClass}
+      >
+        {link.label}
+      </button>
+    ) : (
+      <Link
+        key={link.label}
+        to={link.href}
+        className={navItemClass}
+      >
+        {link.label}
+      </Link>
+    )
+  )}
+</nav>
           {/* CTA Button */}
           <div className="hidden md:block">
             <Button variant="stone" size="lg" onClick={handleGetQuote}>

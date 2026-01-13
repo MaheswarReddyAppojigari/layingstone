@@ -7,7 +7,7 @@ import {
   Instagram,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import logo from "@/assets/layingstone-logo.jpg";
+import logo from "@/assets/layingstone-logo.png";
 
 const footerLinks = {
   services: [
@@ -68,7 +68,7 @@ export const Footer = () => {
           </div>
 
           {/* Services */}
-          <div>
+          {/* <div>
             <h4 className="font-display font-bold text-accent-foreground mb-4">
               Services
             </h4>
@@ -84,10 +84,10 @@ export const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           {/* Company */}
-          <div>
+          {/* <div>
             <h4 className="font-display font-bold text-accent-foreground mb-4">
               Company
             </h4>
@@ -112,7 +112,7 @@ export const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           {/* Contact */}
           <div>
