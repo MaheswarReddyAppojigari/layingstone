@@ -72,9 +72,9 @@ export const Hero = () => {
             style={{ animationDelay: "0.5s" }}
           >
             {[
-              { value: "150+", label: "Projects Completed" },
-              { value: "25+", label: "Years Experience" },
-              { value: "40+", label: "Countries Served" },
+              { value: "2,00,000+", label: "Sq.ft Built" },
+              { value: "10+", label: "Years Experience" },
+              { value: "60+", label: "Courts Built" },
             ].map((stat) => (
               <div key={stat.label}>
                 <div className="font-display font-bold text-3xl sm:text-4xl text-accent-foreground">
