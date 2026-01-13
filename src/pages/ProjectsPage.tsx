@@ -4,118 +4,124 @@ import { FloatingContactButtons } from "@/components/FloatingContactButtons";
 import { ProjectCarousel } from "@/components/ProjectCarousel";
 
 // Import project images
-import projectTrack from "@/assets/project-track.jpg";
-import projectAquatic from "@/assets/project-aquatic.jpg";
-import projectTennis from "@/assets/project-tennis.jpg";
-import projectCricket from "@/assets/project-cricket.jpg";
-import projectFootball from "@/assets/project-football.jpg";
-import projectBasketball from "@/assets/project-basketball.jpg";
-import projectBadminton from "@/assets/project-badminton.jpg";
-import projectHockey from "@/assets/project-hockey.jpg";
-import projectVelodrome from "@/assets/project-velodrome.jpg";
-import projectGym from "@/assets/project-gym.jpg";
+import projectLoco from "@/assets/project-loco.webp";
+import projectSocial from "@/assets/project-social.webp";
+import projectJss from "@/assets/project-jss.jpg";
+import projectSport from "@/assets/project-sporthood.webp";
+import projectNational2 from "@/assets/project-national2.webp";
+import projectCool from "@/assets/project-coolulu.webp";
+import projectAgara from "@/assets/project-agara.jpg";
+import projectUnorthodox from "@/assets/project-unorthodox.webp";
+import projectNational from "@/assets/project-national.webp";
+import projectPoint from "@/assets/project-11point.jpg";
+import projectSriram from "@/assets/project-sriram.jpg";
 import projectsHeroBg from "@/assets/projects-hero-bg.jpg";
-
+import projectGorally from "@/assets/project-gorally.webp";
 const projects = [
   {
-    title: "National Athletics Stadium",
-    category: "Stadium & Track",
-    location: "Melbourne, Australia",
-    sqft: "125,000 sq ft",
-    workDone: "Complete stadium construction with IAAF-certified track, seating for 45,000, and athlete facilities",
-    images: [
-      { src: projectTrack, alt: "National Athletics Stadium track" },
-    ],
+    title: "GoRally Pickleball Agara",
+    category: "Pickle Ball Court",
+    location: "HSR Layout, Bengaluru",
+    sqft: "6,500 sq ft",
+    workDone:
+      "Complete indoor stadium construction with 7 indoor pickle ball courts along with seating",
+    images: [{ src: projectAgara, alt: "National Athletics Stadium track" }],
   },
   {
-    title: "Olympic Aquatic Center",
-    category: "Aquatic Facility",
-    location: "Tokyo, Japan",
-    sqft: "85,000 sq ft",
-    workDone: "Olympic-standard 50m pool, diving platforms, training pools, and spectator seating",
-    images: [
-      { src: projectAquatic, alt: "Olympic Aquatic Center pool" },
-    ],
+    title: "National Hill View Public School",
+    category: "BasketBall court",
+    location: "Rajarajeshwari Nagar, Bengaluru",
+    sqft: "6,500 sq ft",
+    workDone: "NBA standard BasketBall Court ",
+    images: [{ src: projectNational, alt: "Olympic Aquatic Center pool" }],
   },
   {
-    title: "Grand Tennis Academy",
-    category: "Tennis Complex",
-    location: "Madrid, Spain",
-    sqft: "65,000 sq ft",
-    workDone: "12 professional tennis courts, center court arena, training facilities, and clubhouse",
-    images: [
-      { src: projectTennis, alt: "Grand Tennis Academy courts" },
-    ],
+    title: "11 Point Club",
+    category: "PickleBall Complex",
+    location: "Kadubeesanahalli, Bengaluru",
+    sqft: "6,500 sq ft",
+    workDone:
+      "16 professional pickleBall courts, center court arena, training facilities, and cafe(Complete TurnKey)",
+    images: [{ src: projectPoint, alt: "Grand Tennis Academy courts" }],
   },
   {
-    title: "International Cricket Stadium",
-    category: "Cricket Stadium",
-    location: "Mumbai, India",
-    sqft: "180,000 sq ft",
-    workDone: "ICC-standard cricket ground, 50,000 seating capacity, player facilities, and media center",
-    images: [
-      { src: projectCricket, alt: "International Cricket Stadium" },
-    ],
+    title: "Shriram Pristine Estates",
+    category: "BasketBall Court and Tennis Court",
+    location: "Doddaballapura Main Rd, Bengaluru",
+    sqft: "6,500 sq ft",
+    workDone: "NBA Standard BasketBall Court and a Lawn Tennis court",
+    images: [{ src: projectSriram, alt: "International Cricket Stadium" }],
   },
   {
-    title: "Premier Football Arena",
-    category: "Football Stadium",
-    location: "Manchester, UK",
-    sqft: "210,000 sq ft",
-    workDone: "FIFA-certified pitch, 60,000 capacity stadium, VIP lounges, and training grounds",
-    images: [
-      { src: projectFootball, alt: "Premier Football Arena" },
-    ],
+    title: "Unorthodox sports arena",
+    category: "Cricket  Football PickleBall ",
+    location: "Halanayakanahalli, Bengaluru",
+    sqft: "6,500 sq ft",
+    workDone:
+      "Built 4 Cricket nets ,a 7A side football court and 3 semi indoor pickleball courts",
+    images: [{ src: projectUnorthodox, alt: "Premier Football Arena" }],
   },
   {
-    title: "Elite Basketball Complex",
-    category: "Indoor Arena",
-    location: "Chicago, USA",
-    sqft: "45,000 sq ft",
-    workDone: "NBA-standard court, 18,000 seating, practice facilities, and locker rooms",
-    images: [
-      { src: projectBasketball, alt: "Elite Basketball Complex" },
-    ],
+    title: "GoRally Pickleball HSR",
+    category: "Pickle Ball",
+    location: "HSR Extension, VGP Layout, Bengaluru",
+    sqft: "6,500 sq ft",
+    workDone:
+      "Built 3 Pickleball Courts with resting facilities and training grounds",
+    images: [{ src: projectGorally, alt: "Elite Basketball Complex" }],
   },
   {
-    title: "National Badminton Center",
-    category: "Indoor Sports",
-    location: "Kuala Lumpur, Malaysia",
-    sqft: "38,000 sq ft",
-    workDone: "8 BWF-certified courts, training center, athlete accommodation, and sports science lab",
-    images: [
-      { src: projectBadminton, alt: "National Badminton Center" },
-    ],
+    title: "Coolulu",
+    category: "Pickle Ball",
+    location: "Koramangala, Bengaluru",
+    sqft: "6,500 sq ft",
+    workDone:
+      "Built 4 Pickleball Courts with resting facilities and training grounds",
+    images: [{ src: projectCool, alt: "National Badminton Center" }],
   },
   {
-    title: "Olympic Hockey Stadium",
-    category: "Hockey Field",
-    location: "Amsterdam, Netherlands",
-    sqft: "92,000 sq ft",
-    workDone: "FIH-certified synthetic turf, 15,000 seating, dugouts, and broadcasting facilities",
-    images: [
-      { src: projectHockey, alt: "Olympic Hockey Stadium" },
-    ],
+    title: "National Hill View Public School",
+    category: "Complete Sports Facility",
+    location: "Rajarajeshwari Nagar, Bengaluru",
+    sqft: "6,500 sq ft",
+    workDone:
+      "Built a 7A Football Court,volleyball Court,Throwball Court and 4 Cricket Nets",
+    images: [{ src: projectNational2, alt: "Olympic Hockey Stadium" }],
   },
   {
-    title: "World Cycling Velodrome",
-    category: "Velodrome",
-    location: "Berlin, Germany",
-    sqft: "55,000 sq ft",
-    workDone: "UCI-certified wooden track, 6,000 seating, timing systems, and training zones",
-    images: [
-      { src: projectVelodrome, alt: "World Cycling Velodrome" },
-    ],
+    title: "Sporthood Badminton Center",
+    category: "Badminton",
+    location: "Doddanekkundi, Bengaluru",
+    sqft: "6,500 sq ft",
+    workDone:
+      "Built 3 International Standard Roof Top Badminton Courts along seating facility",
+    images: [{ src: projectSport, alt: "World Cycling Velodrome" }],
   },
   {
-    title: "Elite Training Gymnasium",
-    category: "Training Facility",
-    location: "Dubai, UAE",
-    sqft: "28,000 sq ft",
-    workDone: "State-of-the-art equipment, Olympic weightlifting platforms, recovery center, and physio rooms",
-    images: [
-      { src: projectGym, alt: "Elite Training Gymnasium" },
-    ],
+    title: "JSS Public School",
+    category: "Cricket",
+    location: "HSR Layout, Bengaluru",
+    sqft: "6,500 sq ft",
+    workDone:
+      "State-of-the-art equipment, Olympic weightlifting platforms, recovery center, and physio rooms",
+    images: [{ src: projectJss, alt: "Elite Training Gymnasium" }],
+  },
+  {
+    title: "Social Grid",
+    category: "Pickle Ball",
+    location: "Whitefield, Bengaluru",
+    sqft: "6,500 sq ft",
+    workDone: "Built 9 Pickle Ball Courts with State-of-the-art equipment",
+    images: [{ src: projectSocial, alt: "Elite Training Gymnasium" }],
+  },
+  {
+    title: "Loco Bear",
+    category: "GoKarting and Indoor",
+    location: "Koramangala, Bengaluru",
+    sqft: "6,500 sq ft",
+    workDone:
+      "Complete Setup of indoor Arena and made GoKarting along with complete safety",
+    images: [{ src: projectLoco, alt: "Elite Training Gymnasium" }],
   },
 ];
 
@@ -127,12 +133,12 @@ const ProjectsPage = () => {
         {/* Hero Section */}
         <section className="py-16 lg:py-24 relative">
           {/* Background Image */}
-          <div 
+          <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{ backgroundImage: `url(${projectsHeroBg})` }}
           />
           <div className="absolute inset-0 bg-primary/80" />
-          
+
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="text-center max-w-3xl mx-auto">
               <span className="text-accent font-semibold text-sm uppercase tracking-wider">
@@ -142,8 +148,9 @@ const ProjectsPage = () => {
                 Featured Projects
               </h1>
               <p className="text-accent-foreground/80 text-lg">
-                Explore our landmark sports infrastructure projects from around the world. 
-                Each project represents our commitment to excellence and innovation.
+                Explore our landmark sports infrastructure projects from around
+                the world. Each project represents our commitment to excellence
+                and innovation.
               </p>
             </div>
           </div>

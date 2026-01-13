@@ -1,27 +1,27 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import projectTennis from "@/assets/project-tennis.jpg";
-import projectAquatic from "@/assets/project-aquatic.jpg";
-import projectTrack from "@/assets/project-track.jpg";
+import projectPoint from "@/assets/project-11point.jpg";
 
+import projectNational from '@/assets/project-national.webp'
+import projectAgara from "@/assets/project-agara.jpg"
 const projects = [
   {
-    image: projectTrack,
-    title: "National Athletics Stadium",
-    location: "Melbourne, Australia",
-    category: "Stadium & Track",
+    image: projectAgara,
+    title: "GoRally Pickleball Agara",
+    location: "HSR Layout, Bengaluru",
+    category: "7 indoor pickle ball courts",
   },
   {
-    image: projectAquatic,
-    title: "Olympic Aquatic Center",
-    location: "Tokyo, Japan",
-    category: "Aquatic Facility",
+    image: projectNational,
+    title: "National Hill View Public School",
+    location: "Rajarajeshwari Nagar, Bengaluru",
+    category: "BasketBall Court",
   },
   {
-    image: projectTennis,
-    title: "Grand Tennis Academy",
-    location: "Madrid, Spain",
-    category: "Tennis Complex",
+    image: projectPoint,
+    title: "11 Point Club",
+    location: "Kadubeesanahalli,Bengaluru",
+    category: "16 Pickle Courts + Complex",
   },
 ];
 
